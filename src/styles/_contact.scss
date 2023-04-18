@@ -1,0 +1,100 @@
+@use 'cores';
+
+.contact{
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @media (max-width:1024px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:1024px){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__img{
+            display: flex;
+            justify-content: center;
+            .catsleeping{
+                height: 600px;
+                border-radius: 50%;
+
+                
+                @media (max-width:1024px){
+                    height: 300px;
+                }
+
+                @media (max-width:280px){
+                    height: 240px;
+                }
+            }
+        }
+
+        &__links{
+
+            width: 800px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width:1024px){
+                width: 100%;
+                display: block;
+                flex-direction: column;
+            }
+
+            h2{
+                text-align: center;
+                font-size: 100px;
+                color:cores.$corNormal;
+                
+                @media (max-width:1280px){
+                    font-size: 80px;
+                }
+
+                @media (max-width:1024px){
+                    font-size: 50px;
+                }
+                
+                i{
+                    padding-left: 12px;
+                    font-size: 80px;
+                    color:cores.$corDestacada;
+                    @media (max-width:1024px){
+                        font-size: 40px;
+                    }
+                    
+                }
+            }
+
+            .social-links{
+                display: flex;
+                justify-content: center;
+                &__item{
+                    font-size: 100px;
+                    padding: 0 40px;
+
+
+                    @media (max-width:1024px){
+                        padding: 0 20px;
+                    }
+                    @media (max-width:280px){
+                        font-size: 60px;
+                    }
+
+                    i{
+                        color:cores.$corDestacada;
+                    }
+                }
+            }
+        }
+    }
+}

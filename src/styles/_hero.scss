@@ -1,0 +1,99 @@
+@use 'cores';
+
+.hero{
+
+    padding-top: 100px;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        
+        @media (max-width:1024px){
+            display: block;
+        }
+
+        &__img{
+            display: flex;
+            justify-content: center;
+
+            .cat{
+                height: 680px;
+                border-radius: 50%;
+                @media (max-width:1024px){
+                    height: 300px;
+                }
+                @media (max-width:280px){
+                    height: 240px;
+                }
+            }
+        }
+
+        &__text{
+            
+            width: 800px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width:1024px){
+                width: 100%;  
+            }
+
+           
+
+            h1{
+                font-size: 100px;
+                color:cores.$corNormal;
+
+                @media (max-width:1280px){
+                    font-size: 80px;
+                }
+
+                @media (max-width:1024px){
+                    font-size: 50px;
+                }
+
+
+
+                i{
+                    color:cores.$corDestacada;
+                    @media (max-width:1024px){
+                    font-size: 30px;
+                }
+                }
+
+                span{
+                    color:cores.$corDestacada;
+                }
+            }
+
+            p{
+                font-size: 30px;
+                color: cores.$corNormal;
+                @media (max-width:1024px){
+                    text-align: center;
+                    
+                }
+            }
+
+            :nth-child(4){
+                font-size: 80px;
+
+                @media (max-width:1024px){
+                    font-size: 60px;
+                }
+
+                span{
+                    color:cores.$corDestacada;
+                    @media (max-width:1024px){
+                        text-align: center;
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

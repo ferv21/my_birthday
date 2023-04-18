@@ -1,0 +1,55 @@
+@use 'cores';
+
+.header {
+
+        background-color: cores.$corMenu;
+        position: sticky;
+        top: 0;
+        left: 0;
+        .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:860px){
+            display: block;
+        }
+        }
+        &__logo{
+            font-size: 60px;
+            color:cores.$corNormal;
+            @media (max-width:860px){
+                text-align: center;
+            }
+        }
+
+        &__menu{
+             @media (max-width:860px){
+                display: flex;
+                justify-content: center;
+            }
+            &__list{
+                display: flex;
+                
+                &__item{
+                    padding: 0 60px;
+                    @media (max-width:860px){
+                        padding: 0 20px;
+                    }
+
+                    button{
+                        color:cores.$corNormal;
+                        font-size: 40px;
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        &:hover{
+                            color:cores.$corDestacada;   
+                        }
+                    }
+                }
+            }
+        }
+ 
+
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+    <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <p>Fer's Birthday!</p>
+                </div>
+                <div class="header__menu">
+                    <ul class="header__menu__list">
+                        <li class="header__menu__list__item">
+                            <button data-button-home="home">Home</button>
+                        </li>
+                        <li class="header__menu__list__item">
+                            <button data-button-local="local">Local</button>
+                        </li>
+                        <li class="header__menu__list__item">
+                            <button data-button-contato="contato">Contato</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       
+    </header>
+    <section class="hero container" id="home">
+        <div class="hero__content" data-aos="fade-left">
+            <div class="hero__content__img">
+                <img class="cat" src="/src/images/cat.jpg" alt="">
+            </div>
+            <div class="hero__content__text">
+                <h1>
+                    <i class="fa-solid fa-cake-candles"></i>
+                    Fer's <span>Birthday</span>
+                    <i class="fa-solid fa-cake-candles"></i>
+                </h1>
+                <p>06st Jully | 3PM </p>
+                <p>Tudo na vida passa, nem que seja por cima de você.</p>
+                <p>Faltam <span id="contador"></span></p>
+            </div>
+        </div>
+    </section>
+    <section class="local container" id="local">
+        <div class="local__content" data-aos="fade-right">
+            <div class="local__content__img">
+                <img class="dino" src="/src/images/dino.jpg" alt="">
+            </div>
+            <div class="local__content__text">
+                <h2><i class="fa-solid fa-map-pin"></i>Location</h2>
+                <p>Rua Lorem N.º1339 - JavaScript - Brasil</p>
+                <p>Às 19:00hrs</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact container" id="contato">
+        <div class="contact__content" data-aos="fade-left">
+
+            <div class="contact__content__links">
+                <h2>Contatos<i class="fa-regular fa-message"></i></h2>
+                <ul class="social-links">
+                    <li class="social-links__item">
+                        <a href="">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact__content__img">
+                <img class="catsleeping" src="/src/images/catsleeping.jpg" alt="">
+            </div>
+        </div>    
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/7e0586ee10.js" crossorigin="anonymous"></script>
+    <script src="/src/scripts/main.js"></script>
+</body>
+</html>
